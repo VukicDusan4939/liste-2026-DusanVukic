@@ -11,6 +11,7 @@ namespace liste_2026_DusanVukic
         static void Main(string[] args)
         {
             Console.WriteLine("Pozdrav za 3-9!");
+            Console.WriteLine("Drugi red");
             Console.ReadLine();
         }
     }
