@@ -41,9 +41,30 @@ namespace liste_2026_DusanVukic
             q.Enqueue("Aleksa");
             q.Enqueue("Jaksa");
             string sledeci = q.Dequeue();
-            Console.WriteLine(sledeci);
+            //Console.WriteLine(sledeci);
             sledeci=q.Dequeue();
-            Console.WriteLine(sledeci);
+            //Console.WriteLine(sledeci);
+
+            // lista slogova
+            List<grana> grane;
+            grane = new List<grana>();
+            // jedan slog pravim i popunjavam
+            grana nova = new grana();
+            nova.cvor = 2;
+            nova.tezina = 5;
+            //i ubacim u listu
+            grane.Add(nova);
+            nova = new grana();
+            nova.cvor = 3;
+            nova.tezina = 6;
+            grane.Add(nova);
+            nova = new grana();
+            nova.cvor = 5;
+            nova.tezina = 10;
+            grane.Add(nova);
+            Console.WriteLine(grane[1].cvor);
+            Console.WriteLine(grane[2].tezina);
+
         }
     }
 }
